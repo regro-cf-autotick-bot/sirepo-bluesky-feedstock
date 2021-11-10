@@ -1,6 +1,6 @@
 {% set name = "sirepo-bluesky" %}
-{% set version = "0.4.0" %}
-{% set sha256 = "cccfab16628b33c2b35e32318f62991d6f29647a999900bf3bc3c1ddb531c204" %}
+{% set version = "0.4.1" %}
+{% set sha256 = "fd083f3e4bf0851d3aa00a17e9c4c4c97b63d4f85708c50c60edeade52eecbf2" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
