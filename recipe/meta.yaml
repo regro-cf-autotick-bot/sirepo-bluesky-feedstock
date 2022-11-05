@@ -21,6 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8
+    - area-detector-handlers
     - bluesky
     - databroker <2.0.0b
     - inflection
@@ -29,10 +30,10 @@ requirements:
     - numconv
     - numpy
     - ophyd
+    - peakutils
     - pymongo
     - pyqt >=5.9
     - requests
-    - scikit-image
     - shadow3
     - srwpy
     - tfs-pandas
@@ -52,5 +53,4 @@ about:
 extra:
   recipe-maintainers:
     - mrakitin
-    - kbeeperez
     - conda-forge/event-model
