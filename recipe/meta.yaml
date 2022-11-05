@@ -1,6 +1,6 @@
 {% set name = "sirepo-bluesky" %}
-{% set version = "0.4.3" %}
-{% set sha256 = "b21715f4a69572d12f4811334c1cb055bea3f714171744ffe79d3ba9f2874d36" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "047502b94ec7c17ead717ea15fd1ed642ca4caa777eb6089263908eb1d6cb96f" %}
 
 package:
   name: {{ name|lower }}
@@ -17,24 +17,26 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
+    - area-detector-handlers
     - bluesky
-    - databroker
+    - databroker <2.0.0b
     - inflection
     - ipython
     - matplotlib-base
     - numconv
     - numpy
     - ophyd
+    - peakutils
     - pymongo
     - pyqt >=5.9
     - requests
-    - scikit-image
     - shadow3
     - srwpy
+    - tfs-pandas
     - unyt
 
 test:
@@ -51,5 +53,4 @@ about:
 extra:
   recipe-maintainers:
     - mrakitin
-    - kbeeperez
     - conda-forge/event-model
