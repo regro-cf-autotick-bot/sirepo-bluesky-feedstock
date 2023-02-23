@@ -1,6 +1,5 @@
 {% set name = "sirepo-bluesky" %}
-{% set version = "0.5.0" %}
-{% set sha256 = "047502b94ec7c17ead717ea15fd1ed642ca4caa777eb6089263908eb1d6cb96f" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: b2edaab05434f5ce38aa8471ab58eb7ad5db35e3695ae738c1b9187f0285d5cc
 
 build:
   number: 0
@@ -23,7 +22,7 @@ requirements:
     - python >=3.8
     - area-detector-handlers
     - bluesky
-    - databroker <2.0.0b
+    - databroker
     - inflection
     - ipython
     - matplotlib-base
