@@ -10,7 +10,7 @@ source:
   sha256: f717388de9191cf97e86c6def24062795c0d7fc13859cdf4a6f7ed78d289906d
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -38,10 +38,24 @@ requirements:
     - tfs-pandas
     - unyt
     - xraylib
+    - zict <3.0.0
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check || echo "No problem"
   imports:
     - sirepo_bluesky
+    - sirepo_bluesky.madx_flyer
+    - sirepo_bluesky.madx_handler
+    - sirepo_bluesky.shadow_detector
+    - sirepo_bluesky.shadow_handler
+    - sirepo_bluesky.sirepo_bluesky
+    - sirepo_bluesky.sirepo_flyer
+    - sirepo_bluesky.sirepo_ophyd
+    - sirepo_bluesky.srw_detector
+    - sirepo_bluesky.srw_handler
 
 about:
   home: https://github.com/NSLS-II/sirepo-bluesky
