@@ -38,6 +38,7 @@ requirements:
     - tfs-pandas
     - unyt
     - xraylib
+    - zict <3.0.0
 
 test:
   requires:
