@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.8
     - area-detector-handlers
-    - bluesky
+    - bluesky >=1.11.0
     - databroker
     - inflection
     - ipython
@@ -38,7 +38,6 @@ requirements:
     - tfs-pandas
     - unyt
     - xraylib
-    - zict <3.0.0
 
 test:
   requires:
