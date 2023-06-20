@@ -10,7 +10,7 @@ source:
   sha256: f717388de9191cf97e86c6def24062795c0d7fc13859cdf4a6f7ed78d289906d
 
 build:
-  number: 2
+  number: 3
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.8
     - area-detector-handlers
-    - bluesky
+    - bluesky >=1.11.0
     - databroker
     - inflection
     - ipython
@@ -38,7 +38,6 @@ requirements:
     - tfs-pandas
     - unyt
     - xraylib
-    - zict <3.0.0
 
 test:
   requires:
