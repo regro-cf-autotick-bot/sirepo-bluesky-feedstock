@@ -1,5 +1,5 @@
 {% set name = "sirepo-bluesky" %}
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f717388de9191cf97e86c6def24062795c0d7fc13859cdf4a6f7ed78d289906d
+  sha256: 1ffb92f8176eb0c511b98ae9d1997bf14c1fef67d0bf7044dc2a83f9d333c857
 
 build:
-  number: 3
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
